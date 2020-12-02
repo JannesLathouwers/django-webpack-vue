@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block html %}
+<!doctype html>
+<html {% block html_tag_attributes %}{{ block.super }}{% endblock %}>
+    <head>
+        {% block head %}{{ block.super }}{% endblock %}
+        <!-- html-webpack-inject will inject head assets below -->
+    <link href="/../../static/dashboards/chunk-vendors-0c225073d0a22b9bc674.js" rel="preload" as="script"><link href="/../../static/dashboards/js/app.js" rel="preload" as="script"></head>
+    <body {% block body_tag_attributes %}{{ block.super }}{% endblock %}>
+        {% block body %}{{ block.super }}{% endblock %}
+        <!-- html-webpack-inject will inject body assets below -->
+    <script type="text/javascript" src="/../../static/dashboards/chunk-vendors-0c225073d0a22b9bc674.js"></script><script type="text/javascript" src="/../../static/dashboards/js/app.js"></script></body>
+</html>
+{% endblock %}
