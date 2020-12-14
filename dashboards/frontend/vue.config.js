@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-    outputDir: path.resolve(__dirname, "../dashboards/static/dashboards"),
+    outputDir: path.resolve(__dirname, "../static/dashboards"),
     assetsDir: "../../static/dashboards",
     indexPath: "../../templates/vue-index.html",
     filenameHashing: false,
